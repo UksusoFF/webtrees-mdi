@@ -50,6 +50,10 @@
     @include icon("human-male-girl");
 }
 
+.wt-icon-media {
+    @include icon("camera");
+}
+
 .wt-icon-zoom-in {
     @include icon("magnify-plus-outline");
 }
