@@ -1,0 +1,52 @@
+@import '~@mdi/font/scss/_variables.scss';
+@import '~@mdi/font/scss/_functions.scss';
+@import 'common.scss';
+
+%mdi-icon-silhouette {
+    @extend %mdi-icon-common;
+    display: inline-block;
+    font-size: 40px;
+    line-height: 50px;
+    color: #555;
+}
+
+%mdi-individual-silhouette {
+    @extend %mdi-icon-common;
+    display: block;
+    font-size: 50px;
+    line-height: 100px;
+    color: #555;
+    text-align: center;
+}
+
+.icon-silhouette-M {
+    content: none;
+    &:before {
+        @extend %mdi-icon-silhouette;
+        content: mdi("face-profile");
+    }
+}
+
+.icon-silhouette-F {
+    content: none;
+    &:before {
+        @extend %mdi-icon-silhouette;
+        content: mdi("face-profile-woman");
+    }
+}
+
+.wt-individual-silhouette-m {
+    content: none;
+    &:before {
+        @extend %mdi-individual-silhouette;
+        content: mdi("face-profile");
+    }
+}
+
+.wt-individual-silhouette-f {
+    content: none;
+    &:before {
+        @extend %mdi-individual-silhouette;
+        content: mdi("face-profile-woman");
+    }
+}

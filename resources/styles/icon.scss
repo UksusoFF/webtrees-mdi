@@ -1,0 +1,137 @@
+@import '~@mdi/font/scss/_variables.scss';
+@import '~@mdi/font/scss/_functions.scss';
+@import 'common.scss';
+@import 'colors.scss';
+
+%mdi-icon {
+    @extend %mdi-icon-common;
+    display: inline-block;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+@mixin icon($name) {
+    content: none;
+    svg {
+        display: none;
+    }
+    &:before {
+        @extend %mdi-icon;
+        content: mdi($name);
+    }
+}
+
+.icon-indis {
+    @include icon("account");
+}
+
+.icon-cfamily {
+    @include icon("human-male-girl");
+}
+
+.icon-selected {
+    @include icon("check-bold");
+}
+
+.icon-pedigree {
+    @include icon("sitemap");
+    transform: rotate(90deg);
+}
+
+.icon-minus {
+    @include icon("minus-box-outline");
+}
+
+.icon-plus {
+    @include icon("plus-box-outline");
+}
+
+.icon-children {
+    @include icon("human-male-girl");
+}
+
+.wt-icon-zoom-in {
+    @include icon("magnify-plus-outline");
+}
+
+.wt-icon-zoom-out {
+    @include icon("magnify-minus-outline");
+}
+
+.wt-icon-delete {
+    @include icon("delete");
+    color: $danger;
+    &:hover {
+        color: $danger-hover
+    }
+}
+
+.wt-icon-edit {
+    @include icon("pencil");
+}
+
+.wt-icon-add {
+    @include icon("plus-box");
+}
+
+.wt-icon-save {
+    @include icon("content-save");
+}
+
+.wt-icon-cancel {
+    @include icon("cancel");
+}
+
+.wt-icon-search {
+    @include icon("magnify");
+}
+
+.wt-icon-reorder {
+    @include icon("swap-vertical-bold");
+}
+
+.wt-icon-copy {
+    @include icon("content-copy");
+}
+
+.wt-icon-individual {
+    @include icon("google-street-view");
+}
+
+.wt-icon-anniversary {
+    @include icon("bell-ring");
+}
+
+.wt-icon-preferences {
+    @include icon("tools");
+}
+
+.wt-icon-help {
+    @include icon("help-circle");
+}
+
+.wt-icon-calendar {
+    @include icon("calendar-multiselect");
+}
+
+.wt-icon-coordinates {
+    @include icon("crosshairs-gps");
+}
+
+.wt-icon-sex {
+    font-size: 140%;
+}
+
+.wt-icon-sex-m {
+    @include icon("gender-male");
+    color: $sex-m;
+}
+
+.wt-icon-sex-f {
+    @include icon("gender-female");
+    color: $sex-f;
+}
+
+.wt-icon-sex-u {
+    @include icon("gender-male-female");
+}

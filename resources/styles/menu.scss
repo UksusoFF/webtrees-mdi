@@ -1,0 +1,167 @@
+@import '~@mdi/font/scss/_variables.scss';
+@import '~@mdi/font/scss/_functions.scss';
+@import 'common.scss';
+
+%mdi-icon-menu {
+    @extend %mdi-icon-common;
+    display: block;
+    font-size: 56px;
+    line-height: 56px;
+    text-align: center;
+}
+
+%mdi-icon-submenu {
+    @extend %mdi-icon-common;
+    display: inline-block;
+    font-size: 22px;
+    line-height: 35px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.menu-tree {
+    .nav-link:before {
+        @extend %mdi-icon-menu;
+        content: mdi("home");
+    }
+    .dropdown-item::before {
+        @extend %mdi-icon-submenu;
+        content: mdi("tree");
+    }
+}
+
+.wt-chart-box-dropdown,
+.menu-chart {
+    .nav-link:before {
+        @extend %mdi-icon-menu;
+        content: mdi("chart-bar");
+    }
+    .menu-chart-fanchart:before {
+        @extend %mdi-icon-submenu;
+        content: mdi("chart-pie");
+    }
+    .menu-chart-hourglass:before {
+        @extend %mdi-icon-submenu;
+        content: mdi("timer-sand");
+    }
+    .menu-chart-compact:before,
+    .menu-chart-ancestry:before {
+        @extend %mdi-icon-submenu;
+        content: mdi("sitemap");
+    }
+    .menu-chart-lifespan:before {
+        @extend %mdi-icon-submenu;
+        content: mdi("clock-outline");
+    }
+    .menu-chart-timeline:before {
+        @extend %mdi-icon-submenu;
+        content: mdi("chart-timeline");
+    }
+    .menu-chart-tree:before {
+        @extend %mdi-icon-submenu;
+        content: mdi("tree");
+    }
+    .menu-chart-pedigreemap:before {
+        @extend %mdi-icon-submenu;
+        content: mdi("map-legend");
+    }
+    .menu-chart-descendants:before {
+        @extend %mdi-icon-submenu;
+        content: mdi("sitemap");
+        transform: rotate(180deg);
+    }
+    .menu-chart-pedigree:before {
+        @extend %mdi-icon-submenu;
+        content: mdi("sitemap");
+        transform: rotate(90deg);
+    }
+    .menu-chart-relationship:before {
+        @extend %mdi-icon-submenu;
+        content: mdi("account-multiple");
+    }
+    .menu-chart-familybook:before {
+        @extend %mdi-icon-submenu;
+        content: mdi("notebook");
+    }
+    .menu-chart-statistics:before {
+        @extend %mdi-icon-submenu;
+        content: mdi("chart-areaspline");
+    }
+}
+
+.menu-list {
+    .nav-link:before {
+        @extend %mdi-icon-menu;
+        content: mdi("account-group");
+    }
+    .menu-branches:before {
+        @extend %mdi-icon-submenu;
+        content: mdi("file-tree");
+    }
+    .menu-list-plac:before {
+        @extend %mdi-icon-submenu;
+        content: mdi("earth");
+    }
+    .menu-list-obje:before {
+        @extend %mdi-icon-submenu;
+        content: mdi("folder-multiple-image");
+    }
+    .menu-list-indi:before {
+        @extend %mdi-icon-submenu;
+        content: mdi("account");
+    }
+    .menu-list-fam:before {
+        @extend %mdi-icon-submenu;
+        content: mdi("human-male-girl");
+    }
+}
+
+.menu-calendar {
+    .nav-link:before {
+        @extend %mdi-icon-menu;
+        content: mdi("calendar-multiselect");
+    }
+    .menu-calendar-day:before,
+    .menu-calendar-month:before,
+    .menu-calendar-year:before {
+        @extend %mdi-icon-submenu;
+        content: mdi("calendar-multiselect");
+        opacity: 0;
+    }
+}
+
+.menu-report {
+    .nav-link:before {
+        @extend %mdi-icon-menu;
+        content: mdi("script-text-outline");
+    }
+    .dropdown-item:before {
+        @extend %mdi-icon-submenu;
+        content: mdi("script-text-outline");
+        opacity: 0;
+    }
+}
+
+.menu-search {
+    .nav-link:before {
+        @extend %mdi-icon-menu;
+        content: mdi("magnify");
+    }
+    .dropdown-item:before {
+        @extend %mdi-icon-submenu;
+        content: mdi("magnify");
+        opacity: 0;
+    }
+}
+
+.menu-clippings {
+    .nav-link:before {
+        @extend %mdi-icon-menu;
+        content: mdi("content-cut");
+    }
+    .dropdown-item:before {
+        @extend %mdi-icon-submenu;
+        content: mdi("content-cut");
+        opacity: 0;
+    }
+}
