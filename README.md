@@ -16,5 +16,4 @@ Tested with 2.0 version and bundled themes.
 1. Rename the folder to `mdi`.
 
 ## Result
-
-TODO: Add screenshot.
+![mdi_screenshot_cr](https://user-images.githubusercontent.com/1931442/72174304-da8d0a80-33f2-11ea-9fd4-9e42c3b727a3.png)
