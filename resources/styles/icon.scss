@@ -21,21 +21,12 @@
     }
 }
 
-.icon-indis {
-    @include icon("account");
-}
-
 .icon-cfamily {
     @include icon("human-male-girl");
 }
 
 .icon-selected {
     @include icon("check-bold");
-}
-
-.icon-pedigree {
-    @include icon("sitemap");
-    transform: rotate(90deg);
 }
 
 .icon-minus {
@@ -48,6 +39,19 @@
 
 .icon-children {
     @include icon("human-male-girl");
+}
+
+.icon-pedigree {
+    @include icon("sitemap");
+    transform: rotate(90deg);
+}
+
+.icon-mypage {
+    @include icon("home-account");
+}
+
+.icon-indis {
+    @include icon("account");
 }
 
 .wt-icon-media {
@@ -138,4 +142,8 @@
 
 .wt-icon-sex-u {
     @include icon("gender-male-female");
+}
+
+.wt-icon-family {
+    @include icon("human-male-female");
 }

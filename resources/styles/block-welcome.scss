@@ -1,0 +1,13 @@
+@import "icon.scss";
+
+.wt-block-welcome,
+.wt-block-gedcom_block,
+.wt-block-user_welcome {
+    .wt-block-content {
+        .icon-pedigree,
+        .icon-mypage,
+        .icon-indis {
+            font-size: 200%;
+        }
+    }
+}

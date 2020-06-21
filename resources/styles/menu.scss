@@ -19,6 +19,14 @@
     text-align: center;
 }
 
+ul.nav.wt-genealogy-menu {
+    li.nav-item {
+        a:hover {
+            text-decoration: none !important;
+        }
+    }
+}
+
 .menu-tree {
     .nav-link:before {
         @extend %mdi-icon-menu;
@@ -94,6 +102,10 @@
         @extend %mdi-icon-menu;
         content: mdi("account-group");
     }
+    .menu-list-subm:before {
+        @extend %mdi-icon-submenu;
+        content: mdi("account-supervisor");
+    }
     .menu-branches:before {
         @extend %mdi-icon-submenu;
         content: mdi("file-tree");
@@ -101,6 +113,14 @@
     .menu-list-plac:before {
         @extend %mdi-icon-submenu;
         content: mdi("earth");
+    }
+    .menu-list-sour:before {
+        @extend %mdi-icon-submenu;
+        content: mdi("notebook-outline");
+    }
+    .menu-list-note:before {
+        @extend %mdi-icon-submenu;
+        content: mdi("note");
     }
     .menu-list-obje:before {
         @extend %mdi-icon-submenu;
@@ -113,6 +133,13 @@
     .menu-list-fam:before {
         @extend %mdi-icon-submenu;
         content: mdi("human-male-girl");
+    }
+}
+
+.menu-story {
+    .nav-link:before {
+        @extend %mdi-icon-menu;
+        content: mdi("script-text-outline");
     }
 }
 
@@ -163,5 +190,12 @@
         @extend %mdi-icon-submenu;
         content: mdi("content-cut");
         opacity: 0;
+    }
+}
+
+.menu-gallery {
+    .nav-link:before {
+        @extend %mdi-icon-menu;
+        content: mdi("camera-image");
     }
 }
