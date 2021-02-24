@@ -7,7 +7,7 @@ This module replace most of webtrees icons with [Material Design Icons](https://
 ## System requirements
 Same as [webtrees#system-requirements](https://github.com/fisharebest/webtrees#system-requirements).
 
-Tested with 2.0 version and bundled themes.
+Tested with 2.0.11 version and bundled themes.
 
 ## Installation
 1. Download the [latest release](https://github.com/UksusoFF/webtrees-mdi/releases/latest)
