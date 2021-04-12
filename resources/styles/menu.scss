@@ -199,3 +199,15 @@ ul.nav.wt-genealogy-menu {
         content: mdi("camera-image");
     }
 }
+
+.menu-faq {
+    .nav-link:before {
+        @extend %mdi-icon-menu;
+        content: mdi("frequently-asked-questions");
+    }
+    .dropdown-item:before {
+        @extend %mdi-icon-submenu;
+        content: mdi("frequently-asked-questions");
+        opacity: 0;
+    }
+}
