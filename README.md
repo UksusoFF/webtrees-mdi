@@ -16,4 +16,4 @@ Works with 2.1.x and 2.2.x version and bundled themes.
 1. Rename the folder to `mdi`
 
 ## Result
-![mdi_screenshot_cr](https://user-images.githubusercontent.com/1931442/72174304-da8d0a80-33f2-11ea-9fd4-9e42c3b727a3.png)
+![mdi_screenshot](/SCREENSHOT.png?raw=true)
