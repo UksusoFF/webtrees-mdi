@@ -14,9 +14,7 @@ class IconsModule extends AbstractModule implements ModuleCustomInterface, Modul
     use ModuleCustomTrait;
     use ModuleGlobalTrait;
 
-    private $name = 'mdi';
-
-    public const CUSTOM_VERSION = '0.1';
+    public const CUSTOM_VERSION = '0.2';
 
     public const CUSTOM_WEBSITE = 'https://github.com/UksusoFF/webtrees-mdi';
 
